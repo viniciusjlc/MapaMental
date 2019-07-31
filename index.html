@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste Mapa Mental</title>
+    
+    <style>
+        #container {
+            width: 100%
+        }
+
+        #imagem {
+            width: 60%;
+            float: left;
+            height: 800px;
+        }
+        
+        #informacao {
+            height: 500px;
+            padding: 10px;
+            float: left;
+            
+        }
+        
+        #informacao-descricao {
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            padding: 5px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste Mapa Mental</h1>
+    <!-- PODE REMOVER DAQUI PARA BAIXO QUANDO NÂO PRECISAR SABER A COORDENADA -->
+    <div>
+        <label>X1 <input type="text" size="4" id="x1" name="x1" /></label>
+        <label>Y1 <input type="text" size="4" id="y1" name="y1" /></label>
+        <label>X2 <input type="text" size="4" id="x2" name="x2" /></label>
+        <label>Y2 <input type="text" size="4" id="y2" name="y2" /></label>
+    </div>
+    <div id="container">
+        <div id="imagem">
+            <!-- DEFINA ATRAVÉS DO USEMAP O NOME DO MAPA COMO UM ID A SER USADO  -->
+            <!-- PARA TESTAR O CORTE, adiciona O ID = target-->
+            <img src="assets/img/fluxograma.jpg" usemap="#fluxograma" id="targetRETIRAR_PARA_ANALISE"/>
+            
+            <!-- DEFINA UM NOME PARA O MAPA -->
+            <map name="fluxograma">
+                <area shape="rect" coords="1, 4, 664, 563" title="TESTE" onclick="buscar('local17')"/>
+                 <!--<area shape="circle" coords="192, 299, 100" title="LOCAL 5"  onclick="buscar('local10')"/>-->
+            </map>
+        </div>
+        
+        <div id="informacao">
+            <h3>Descrição</h3>
+            <h4 id="informacao-titulo">---</h4>
+            <p id="informacao-descricao">
+                ----
+            </p>
+        </div>
+        <br clear="both"/>
+    </div>
+    
+    
+    
+    <!-- MANTEM -->
+    <script src="assets/js/jquery.min.js"></script>
+    
+    <script>
+        //Se for local cria o JSON aqui para não dá erro de CORS
+        // let dados = {
+            //     "local1": {
+                //         "titulo": "Bla bla bla",
+                //         "descricao": "LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 LOCAL 1 "
+                //     },
+                //     "local2": {
+                    //         "titulo": " ASDas SA DAS DAS DSAD",
+                    //         "descricao": "LOCAL 2 LOCAL 2 LOCAL 2 LOCAL 2 LOCAL 2 LOCAL 2 LOCAL 2 LOCAL 2 LOCAL 2 LOCAL 2 LOCAL 2 LOCAL 2  "
+                    //     },
+                    //     "local3": {
+                        //         "titulo": "Olá Mundo",
+                        //         "descricao": "123 321 jaskdjl 12j3l123 sadasda 123123na dasd lkjlk12312 sdas LOCAL 3 LOCAL 3 LOCAL 3  "
+                        //     },
+                        //     "local4": {
+                            //         "titulo": "Hello WOrld",
+                            //         "descricao": "PROBLEMA RESOLVIDO!!! "
+                            //     }
+                            // }
+                            
+                            function buscar(valor) {  
+                                $.get('assets/dados.json', (dados) => { //Se tiver rodando no servidor recupera os dados assim
+                                    $('#informacao-titulo').html(dados[valor].titulo)
+                                    $('#informacao-descricao').html(dados[valor].descricao)
+                                })
+                            }
+                        </script>
+                        
+                        
+                        
+                        <!-- REMOVE, DEPOIS QUE JÀ SOUBER AS COORDENADAS -->
+                        <script src="assets/js/jcrop/jquery.Jcrop.js"></script>   
+                        <script type="text/javascript">
+                            
+                            jQuery(function($){
+                                
+                                var jcrop_api;
+                                
+                                $('#target').Jcrop({
+                                    onChange:   showCoords,
+                                    onSelect:   showCoords,
+                                    onRelease:  clearCoords
+                                },function(){
+                                    jcrop_api = this;
+                                });
+                                
+                                $('#coords').on('change','input',function(e){
+                                    var x1 = $('#x1').val(),
+                                    x2 = $('#x2').val(),
+                                    y1 = $('#y1').val(),
+                                    y2 = $('#y2').val();
+                                    jcrop_api.setSelect([x1,y1,x2,y2]);
+                                });
+                                
+                            });
+                            
+                            // Simple event handler, called from onChange and onSelect
+                            // event handlers, as per the Jcrop invocation above
+                            function showCoords(c) {
+                                $('#x1').val(c.x);
+                                $('#y1').val(c.y);
+                                $('#x2').val(c.x2);
+                                $('#y2').val(c.y2);
+                            };
+                            
+                            function clearCoords() {
+                                $('#coords input').val('');
+                            };
+                        </script>
+                    </body>
+                    </html>

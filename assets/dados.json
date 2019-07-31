@@ -1,0 +1,79 @@
+{
+    "local1": {
+        "titulo": "Programa de Necessidades",
+        "descricao": "Fase resolutiva em que são listados compartimentos que devem integrar edificação tendo como base as necessidades levantadas como condicionantes projetuais. Devem ser agrupadas de acordo com suas atividades afins, em uma residência, por exemplo, deverá ser dividia em setor social (sala de estar, jantar, lavabo, home, varanda), íntimo (quarto suíte, closet, sala de estudos), serviço(cozinha, área de serviço, quarto empregado, depósito, despensa) e outros (garagem).<br/>O que é necessário?<br/>O que se deseja?<br/>O que é possível?"
+    },
+    "local2": {
+        "titulo": "Referencial Arquitetônico",
+        "descricao": "Fala do momento em que a obra aconteceu e sua relação com uma cultura arquitetônica e realidade histórica . Também pode utilizar o referencial arquitetônico, para retirar características de um projeto arquitetônico ou edifício construído e colocar tais características semelhantes no seu projeto.<br/>Quais os acontecimentos históricos e culturais relacionados ao objeto arquitetônico?<br/>Qual projeto você utilizou como referência para poder iniciar o seu?"
+    },
+    "local3": {
+        "titulo": "Análise Programática",
+        "descricao": "Trata-se do estágio do processo projetual de reconhecimento, interpretação e organização dos elementos do contexto (ou programa)."
+    },
+    "local4": {
+        "titulo": "Pesquisa Referencial",
+        "descricao": "Pesquisa arquitetônica, através de visitas à locais com a mesma funcionalidade, ou sites com embasamentos teóricos, para entender sobre modelos de projetos semelhantes ao que será projetado, dessa forma, podendo criar um portfólio arquitetônico, pois estará se familiarizando com outros projetos que possuem a mesma função."
+    },
+    "local5": {
+        "titulo": "Localização",
+        "descricao": "Endereço do projeto. A cidade, o lote, localização, vegetação. Caracteriza o lugar onde se situa o objeto arquitetônico. Compreensão do “Espírito do Lugar” [natural ou construído]<br/>Quais referências o texto faz sobre o lugar da construção?<br/>Quais são as principais referências naturais? Construídas?<br/>Trata das características do lote."
+    },
+    "local6": {
+        "titulo": "Análise de Entorno",
+        "descricao": "A análise do entorno do terreno é tão importante quanto a do próprio terreno. Além de evitar erros de projeto, ela também permite utilizar o próprio entorno como inspiração para seu partido arquitetônico.<br/>Os principais aspectos a serem analisados são o contexto, vias próximas, acessos principais, construções imediatamente vizinhas, construções da região, sombreamentos, pontos de interesses e visuais.<br/>Lembre-se que seu projeto pode tirar proveito dos aspectos que formam seu entorno e também pode contribuir para o próprio aumento da qualidade desse entorno."
+    },
+    "local7": {
+        "titulo": "Análise do Terreno",
+        "descricao": "A análise de aspectos do terreno no qual será implantado o seu projeto é uma das coisas mais fundamentais na hora de projetar. Não levar em consideração características importantes como topografia, vegetação, interferências físicas, construções existentes ou a legislação da área pode simplesmente inviabilizar a proposta toda. Essa análise deve ser feita em três frentes: do ponto de vista físico, de sensações e de legislação.<br/>A análise física deve permitir a você identificar a topografia, limites, interferências naturais, vegetação, construções existentes, ventos e orientação solar.<br/>A análise de sensações tem a ver com as sensações experimentadas quando no terreno. Ele é enclausurado? Possui um aclive ou declive? Me sinto confortável nele?<br/>A análise da legislação deve levar em consideração os recuos, taxa de ocupação, coeficiente de aproveitamento, taxa de permeabilidade, gabarito e afastamentos."
+    },
+    "local8": {
+        "titulo": "Legislação",
+        "descricao": "Nesta etapa da legislação, é necessário o uso do Código de Urbanismo e Edificações de Maceió,  Plano Diretor de Maceió e as Normas Regulamentadoras (Nr’s).<br/>No Código de Urbanismo e Edificações de Maceió, o objetivo é identificar o zoneamento de uso do solo, do local que o projeto será inserido, para então obter:<br/>Zonas – Maceió está dividida em zonas residenciais, residenciais agrícolas, de interesse turístico, de expansão, de preservação cultural, de interesse ambiental e paisagístico, especial de interesse social, industrial e corredores de atividades múltiplas.<br/>Uso – Residencial e não residencial (comercial, serviço e industrial classificados em 5 grupos).<br/>Taxa de ocupação do terreno – Relação entre área de projeção horizontal das edificações e área do lote.<br/>Altura máxima da edificação (número de pavimentos) – Altura medida a partir da cota do meio fio até o ápice ou cumeeira do edifício,<br/>Testada e área mínima do lote – Em relação ao lote<br/>Recuos mínimos – Distância entre o alinhamento do edifício e das divisas do lote.<br/>Coeficiente de aproveitamento do terreno – Relação entre área de construção total das edificações e área do lote.<br/>Vagas do estacionamento – Número mínimo de vagas para a edificação.<br/>"
+    },
+    "local9": {
+        "titulo": "Conceito Arquitetônico",
+        "descricao": "O conceito é a essência do projeto arquitetônico , é entendido como a transição de uma ideia subjetiva e materialização dele ou, como uma metáfora projetada em um espaço que dá sentido ao trabalho arquitetônico. Um conceito claro orienta a função e o valor estético de qualquer projeto, evitando cair em caprichos formais. Pode-se dizer que o conceito é a ideia central do projeto, podendo ser palavras ou imagens de ideias associadas, um esboço da definição, desenvolvimento de desenhos esquemáticos. O conceito depende dos aspectos verificados no levantamento de dados, da intenção plástica do autor, como também da personalidade, do estilo, da época, etc, tanto do cliente como dos autos."
+    },
+    "local10": {
+        "titulo": "Referencial Simbólico",
+        "descricao": "Fala do significado da imagem. Trata da representação analógica ou emblemática presente no projeto do ponto de vista da imagem.<br/>Qual a referência utilizada? Natureza? Indústria?<br/>Do ponto de vista da IMAGEM, qual a referência utilizada? A arte? A natureza? A indústria? Outra?<br/>O que diz o texto sobre o significado de sua aparência?<br/>Existem analogias incorporadas ao projeto?"
+    },
+    "local11": {
+        "titulo": "Tipologia",
+        "descricao": "A tipologia é um método de categorização comum aos estudos sistemáticos. O estudo de tipologias em arquitetura caracteriza-se pelo estudo de tipos elementares que podem constituir uma regra. Embora seja vulgarmente utilizada a expressão para definir o número de quartos numa habitação, a tipologia pode referir-se ao estudo da composição dos edifícios (como na disposição das unidades de habitações e circulações) ou ainda nas regras inerentes à composição urbanística (edifícios em banda, quarteirões clássicos etc) ou até mesmo do que se trata o contexto arquitetônico.<br/>Qual a tipologia arquitetônica? (Casa, edifício, templo religioso...)"
+    },
+    "local12": {
+        "titulo": "Partido Arquitetônico",
+        "descricao": "O partido é a consequência formal do conceito. É necessário conhecimento básicos sobre materiais, estrutura, sistemas construtivos, soluções de coberta, fechamento e aberturas, estilos arquitetônicos, métodos, etc.<br/>Através do que, o seu conceito estará sendo representado no projeto?"
+    },
+    "local13": {
+        "titulo": "Estudo da Volumetria",
+        "descricao": "A forma interior e exterior. Volumetria, cheios e vazios, interligação, comunicação, opacidades, transparências, superfície. Fala da configuração formal arquitetônica (interior/ exterior); Volumetria, interligação/ comunicação entre cheios e vazios; Traz o sentido da “PLÁSTICA” em arquitetura.<br/>PLÁSTICA:<br/>Os elementos que dão sentido a forma artística: por exemplo, na pintura (linhas, superfícies, cor, técnicas, etc.); E em arquitetura? <br/>(jogo de volumes(cheios e vazios), fenestração (tratamento e solução das aberturas), tratamento da cobertura, tratamento das superfícies, os elementos formais associados a estrutura portante, a forma final do objeto arquitetônico).<br/>Quais os elementos que determinam a forma exterior do edifício?<br/>Quais os elementos que determinam a forma interior?<br/>Qual o tratamento dado a estes elementos?"
+    },
+    "local14": {
+        "titulo": "Geometria",
+        "descricao": "Forma: Orgânico, cartesiano, longilíneo, fragmentado, circular..."
+    },
+    "local15": {
+        "titulo": "Zoneamento",
+        "descricao": "É o mapeamento dos setores de funcionamento onde se agrupam os compartimentos afins do terreno levando em consideração todas as informações analisadas nos outros itens da metodologia. É necessário um conhecimento básico de conforto ambiental, para saber as direções dos ventos propícios a cada ambiente."
+    },
+    "local16": {
+        "titulo": "Pré-Dimensionamento",
+        "descricao": "Depois de analisar as necessidades do espaço, os ambientes devem ser definidos, mas aquilo nem sempre agrada quem pediu o projeto. Por esse motivo, deve ser feito um Pré-dimensionamento com os valores mínimos a serem adotados para a área e para o espaçamento. Além apenas da área dos ambientes, deve levar em conta também a comodidade e a maneira como será feita a organização interna. É necessário um conhecimento básico de antropometria, ergonomia e dimensionamento de interiores. É importante para verificar antecipadamente se a edificação em estudo: é compatível com as dimensões do terreno, atende a legislação, não extrapola o orçamento, serve de base para o cálculo dos honorários do arquiteto.<br/>Então, deve ser feita uma avaliação prévia da área a ser edificada, com a quantificação das áreas de cada um dos compartimentos listados no programa de necessidades a partir de uma sugestão de layout baseado nos conhecimentos de dimensionamento de interiores e nos dados levantados como condicionantes projetuais.  Concluindo esta etapa, é realizado o somatório das áreas de todos os compartimentos com um acréscimo de 10 a 20% dependendo do tipo de edificação correspondente as áreas de paredes e circulações."
+    },
+    "local17": {
+        "titulo": "Organo-Fluxograma",
+        "descricao": "É a organização dos espaços de acordo com o uso e o fluxo das pessoas levando em consideração as mais variadas formas em relação entre eles."
+    },
+    "local18": {
+        "titulo": "Materiais Construtivos",
+        "descricao": "Tecnologia construtiva e uso de materiais. Fala dos aspectos construtivos presentes na obra. Trata da técnica construtiva[alvenaria, concreto armado, pré-fabricado], ou da tecnologia construtiva. Empregada (o processo de construção). Fala da estrutura portante (sustentação do edifício). Explica a utilização dos materiais empregados.<br/>Como se caracteriza o processo construtivo utilizado na obra?<br/>Quais os materiais empregados?<br/>Como se dá a sustentação do edifício? Como a estrutura se apresenta?<br/>Está aparente? É parte da composição formal? Ou ela não está evidente?"
+    },
+    "local19": {
+        "titulo": "Desenvolvimento Desenho Técnico",
+        "descricao": "Fala do espaço arquitetônico, usos, função, tipo, organização espacial, configuração dos setores, pré-dimensionamento, fluxos, área de construção, taxa de ocupação, índice de aproveitamento. Análise das plantas baixas, cortes e fachadas<br/>Qual o programa de necessidades existente?<br/>Para que serve?<br/>Como os setores (e seus ambientes) estão organizados?"
+    }
+
+}
