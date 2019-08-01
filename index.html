@@ -13,34 +13,38 @@
         #cabecalho{
             position: absolute;
             top: 0%;
-            background-color: #75376a;
+            background-color: #470101;
             width: 100%;
             right: 0%;
             height: 70px;
             font-size: 20px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: whitesmoke;
-        }
-        #container {
-            width: 100%
-        }
-        
+        }        
         #imagem {
             width: 60%;
             float: left;
             height: 800px;
+            border-color: black;
+            border-style: double;
+            border-radius: 10px;
+            margin: 10px 20px;
         }
-        
         #informacao {
+            width: 360px;
             height: 500px;
             padding: 10px;
             float: left;
+            border-color: black;
+            border-style: double;
+            border-radius: 10px;
+            margin: 10px 20px;
             
         }
         #informacao-descricao {
             border: 1px solid black;
             height: 300px;
-            width: 300px;
+            width: 345px;
             padding: 5px;
             overflow: auto;
         }
@@ -68,21 +72,17 @@
                 <label>X2 <input type="text" size="4" id="x2" name="x2" /></label>
                 <label>Y2 <input type="text" size="4" id="y2" name="y2" /></label>
             </div>
-            <div id="container">
-                <div id="imagem">
-                    <!-- DEFINA ATRAVÉS DO USEMAP O NOME DO MAPA COMO UM ID A SER USADO  -->
-                    <!-- PARA TESTAR O CORTE, adiciona O ID = target-->
-                    <img src="assets/img/fluxograma.jpg" usemap="#fluxograma" id="targetRETIRAR_PARA_ANALISE"/>
-                    
-                    <!-- DEFINA UM NOME PARA O MAPA -->
-                    <map name="fluxograma">
-                        <area shape="rect" coords="1, 4, 664, 563" title="TESTE" onclick="buscar('local17')"/>
-                        <!--<area shape="circle" coords="192, 299, 100" title="LOCAL 5"  onclick="buscar('local10')"/>-->
-                    </map>
-                </div>
+            <div id="imagem">
+                <!-- DEFINA ATRAVÉS DO USEMAP O NOME DO MAPA COMO UM ID A SER USADO  -->
+                <!-- PARA TESTAR O CORTE, adiciona O ID = target-->
+                <img src="assets/img/fluxograma.jpg" usemap="#fluxograma" id="targetRETIRAR"/>
+                
+                <!-- DEFINA UM NOME PARA O MAPA -->
+                <map name="fluxograma">
+                    <area shape="rect" coords="1, 4, 664, 563" title="TESTE" onclick="buscar('local17')"/>
+                    <!--<area shape="circle" coords="192, 299, 100" title="LOCAL 5"  onclick="buscar('local10')"/>-->
+                </map>
             </div>
-        </div>
-        <div id="panel-dados-esquerdo">
             <div id="informacao">
                 <h3>Descrição</h3>
                 <h4 id="informacao-titulo">---</h4>
@@ -106,7 +106,7 @@
     <!-- REMOVE, DEPOIS QUE JÀ SOUBER AS COORDENADAS -->
     <script src="assets/js/jcrop/jquery.Jcrop.js"></script>   
     <script type="text/javascript">
-    
+        
         jQuery(function($){   
             var jcrop_api;
             $('#target').Jcrop({
@@ -125,7 +125,7 @@
             });
             
         });
-
+        
         // Simple event handler, called from onChange and onSelect
         // event handlers, as per the Jcrop invocation above
         function showCoords(c) {
