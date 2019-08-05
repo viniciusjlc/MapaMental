@@ -1,95 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teste Mapa Mental</title>
-    <style>
-        .container{
-            width: 90% !important;
-            margin-top: 70px !important;
-        }
-        #cabecalho{
-            position: absolute;
-            top: 0%;
-            background-color: #470101;
-            width: 100%;
-            right: 0%;
-            height: 70px;
-            font-size: 20px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: whitesmoke;
-        }        
-        #imagem {
-            width: 60%;
-            float: left;
-            height: 800px;
-            border-color: black;
-            border-style: double;
-            border-radius: 10px;
-            margin: 10px 20px;
-        }
-        #informacao {
-            width: 360px;
-            height: 500px;
-            padding: 10px;
-            float: left;
-            border-color: black;
-            border-style: double;
-            border-radius: 10px;
-            margin: 10px 20px;
-            
-        }
-        #informacao-descricao {
-            border: 1px solid black;
-            height: 300px;
-            width: 345px;
-            padding: 5px;
-            overflow: auto;
-        }
-        #textocabecalho{
-            margin-top: 15px;
-            margin-left: 30px;
-            color: rgb(252, 252, 252);
-            font-size: 40px;
-            text-align: left;
-            cursor: pointer;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/cssGeral.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
+    <header id="cabecalho">
+        <div id="textocabecalho">Mapa Mental</div>
+    </header>
     <div class="container">
-        <header id="cabecalho">
-            <div id="textocabecalho">Teste Mapa Mental</div>
-        </header>
         <br clear="both"/>
-        <div id="panel-dados-esquerdo">
-            <!-- PODE REMOVER DAQUI PARA BAIXO QUANDO NÂO PRECISAR SABER A COORDENADA -->
-            <div>
-                <label>X1 <input type="text" size="4" id="x1" name="x1" /></label>
-                <label>Y1 <input type="text" size="4" id="y1" name="y1" /></label>
-                <label>X2 <input type="text" size="4" id="x2" name="x2" /></label>
-                <label>Y2 <input type="text" size="4" id="y2" name="y2" /></label>
-            </div>
-            <div id="imagem">
-                <!-- DEFINA ATRAVÉS DO USEMAP O NOME DO MAPA COMO UM ID A SER USADO  -->
-                <!-- PARA TESTAR O CORTE, adiciona O ID = target-->
-                <img src="assets/img/fluxograma.jpg" usemap="#fluxograma" id="targetRETIRAR"/>
+        <!-- PODE REMOVER DAQUI PARA BAIXO QUANDO NÂO PRECISAR SABER A COORDENADA 
+        <div>
+            <label>X1 <input type="text" size="4" id="x1" name="x1" /></label>
+            <label>Y1 <input type="text" size="4" id="y1" name="y1" /></label>
+            <label>X2 <input type="text" size="4" id="x2" name="x2" /></label>
+            <label>Y2 <input type="text" size="4" id="y2" name="y2" /></label>
+        </div>-->
+        <div id="imagem">
+            <img src="assets/img/fluxograma.jpg" usemap="#fluxograma" id="targetAAA"/>
+            <map name="fluxograma">
+                <!--<area shape="rect" coords="1, 4, 664, 563" title="TESTE" onclick="buscar('local17')"/>-->
+                <area shape="circle" coords="583, 153, 38" title="Programa de Necessidades"  onclick="buscar('local1')"/>
+                <area shape="circle" coords="583, 324, 38" title="Referencial Arquitetônico"  onclick="buscar('local2')"/>
+                <area shape="circle" coords="583, 386, 38" title="Análise Programática"  onclick="buscar('local3')"/>
+                <area shape="circle" coords="583, 449, 38" title="Pesquisa Referencial"  onclick="buscar('local4')"/>
+                <area shape="circle" coords="316, 160, 38" title="Localização"  onclick="buscar('local5')"/>
+                <area shape="circle" coords="282, 214, 38" title="Análise de Entorno"  onclick="buscar('local6')"/>
+                <area shape="circle" coords="347, 214, 38" title="Análise do Terreno"  onclick="buscar('local7')"/>
+                <area shape="circle" coords="316, 269, 38" title="Legislação"  onclick="buscar('local8')"/>
+                <area shape="circle" coords="316, 389, 38" title="Conceito Arquitetônico"  onclick="buscar('local9')"/>
+                <area shape="circle" coords="316, 456, 38" title="Referencial Simbólico"  onclick="buscar('local10')"/>
+                <area shape="circle" coords="316, 517, 38" title="Tipologia"  onclick="buscar('local11')"/>
+                <area shape="circle" coords="316, 579, 38" title="Partido Arquitetônico"  onclick="buscar('local12')"/>
+                <area shape="circle" coords="316, 641, 38" title="Estudo da Volumetria"  onclick="buscar('local13')"/>
+                <area shape="circle" coords="316, 707, 38" title="Geometria"  onclick="buscar('local14')"/>
+                <area shape="circle" coords="75, 390, 38" title="Zoneamento"  onclick="buscar('local15')"/>
+                <area shape="circle" coords="75, 455, 38" title="Pré-Dimensionamento"  onclick="buscar('local16')"/>
+                <area shape="circle" coords="75, 517, 38" title="Organo-Fluxograma"  onclick="buscar('local17')"/>
+                <area shape="circle" coords="75, 578, 38" title="Materiais Construtivos"  onclick="buscar('local18')"/>
+                <area shape="circle" coords="75, 221, 38" title="Desenvolvimento Desenho Técnico"  onclick="buscar('local18')"/>
                 
-                <!-- DEFINA UM NOME PARA O MAPA -->
-                <map name="fluxograma">
-                    <area shape="rect" coords="1, 4, 664, 563" title="TESTE" onclick="buscar('local17')"/>
-                    <!--<area shape="circle" coords="192, 299, 100" title="LOCAL 5"  onclick="buscar('local10')"/>-->
-                </map>
-            </div>
-            <div id="informacao">
-                <h3>Descrição</h3>
-                <h4 id="informacao-titulo">---</h4>
-                <p id="informacao-descricao">
-                    ----
-                </p>
-            </div>
+                
+            </map>
+        </div>
+        <div id="informacao">
+            <h3>Descrição</h3>
+            <h4 id="informacao-titulo">---</h4>
+            <p id="informacao-descricao">
+                ----
+            </p>
         </div>
     </div>
     
