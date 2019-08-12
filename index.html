@@ -9,7 +9,7 @@
 </head>
 <body>
     <header id="cabecalho">
-        <div id="textocabecalho">Mapa Mental</div>
+        <div id="textocabecalho">Mapa Conceitual</div>
     </header>
     <div class="container">
         <br clear="both"/>
@@ -62,7 +62,9 @@
         function buscar(valor) {  
             $.get('assets/dados.json', (dados) => { //Se tiver rodando no servidor recupera os dados assim
                 $('#informacao-titulo').html(dados[valor].titulo)
+                $('#informacao-descricao').css('color', dados[valor].cor1)
                 $('#informacao-descricao').html(dados[valor].descricao)
+                $('#informacao-descricao').css('background-color', dados[valor].cor2)
             })
         }
     </script>

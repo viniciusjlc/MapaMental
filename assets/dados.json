@@ -1,15 +1,21 @@
 {
     "local1": {
         "titulo": "Programa de Necessidades",
-        "descricao": "Fase resolutiva em que são listados compartimentos que devem integrar edificação tendo como base as necessidades levantadas como condicionantes projetuais. Devem ser agrupadas de acordo com suas atividades afins, em uma residência, por exemplo, deverá ser dividia em setor social (sala de estar, jantar, lavabo, home, varanda), íntimo (quarto suíte, closet, sala de estudos), serviço(cozinha, área de serviço, quarto empregado, depósito, despensa) e outros (garagem).<br/>O que é necessário?<br/>O que se deseja?<br/>O que é possível?"
+        "descricao": "Fase resolutiva em que são listados compartimentos que devem integrar edificação tendo como base as necessidades levantadas como condicionantes projetuais. Devem ser agrupadas de acordo com suas atividades afins, em uma residência, por exemplo, deverá ser dividia em setor social (sala de estar, jantar, lavabo, home, varanda), íntimo (quarto suíte, closet, sala de estudos), serviço(cozinha, área de serviço, quarto empregado, depósito, despensa) e outros (garagem).<br/>O que é necessário?<br/>O que se deseja?<br/>O que é possível?",
+        "cor1": "red",
+        "cor2": "pink"
     },
     "local2": {
         "titulo": "Referencial Arquitetônico",
-        "descricao": "Fala do momento em que a obra aconteceu e sua relação com uma cultura arquitetônica e realidade histórica . Também pode utilizar o referencial arquitetônico, para retirar características de um projeto arquitetônico ou edifício construído e colocar tais características semelhantes no seu projeto.<br/>Quais os acontecimentos históricos e culturais relacionados ao objeto arquitetônico?<br/>Qual projeto você utilizou como referência para poder iniciar o seu?"
+        "descricao": "Fala do momento em que a obra aconteceu e sua relação com uma cultura arquitetônica e realidade histórica . Também pode utilizar o referencial arquitetônico, para retirar características de um projeto arquitetônico ou edifício construído e colocar tais características semelhantes no seu projeto.<br/>Quais os acontecimentos históricos e culturais relacionados ao objeto arquitetônico?<br/>Qual projeto você utilizou como referência para poder iniciar o seu?",
+        "cor1": "white",
+        "cor2": "green"
     },
     "local3": {
         "titulo": "Análise Programática",
-        "descricao": "Trata-se do estágio do processo projetual de reconhecimento, interpretação e organização dos elementos do contexto (ou programa)."
+        "descricao": "Trata-se do estágio do processo projetual de reconhecimento, interpretação e organização dos elementos do contexto (ou programa).",
+        "cor1": "white",
+        "cor2": "green"
     },
     "local4": {
         "titulo": "Pesquisa Referencial",
