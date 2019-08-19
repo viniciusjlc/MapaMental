@@ -8,9 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
-    <header id="cabecalho">
-        <div id="textocabecalho">Mapa Conceitual</div>
-    </header>
     <div class="container">
         <br clear="both"/>
         <!-- PODE REMOVER DAQUI PARA BAIXO QUANDO NÂO PRECISAR SABER A COORDENADA 
@@ -19,15 +16,16 @@
             <label>Y1 <input type="text" size="4" id="y1" name="y1" /></label>
             <label>X2 <input type="text" size="4" id="x2" name="x2" /></label>
             <label>Y2 <input type="text" size="4" id="y2" name="y2" /></label>
-        </div>-->
+        </div>
+        -->
         <div id="imagem">
-            <img src="assets/img/fluxograma.jpg" usemap="#fluxograma" id="targetAAA"/>
+            <img src="assets/img/fluxograma.jpg" usemap="#fluxograma" id="targetA"/>
             <map name="fluxograma">
                 <!--<area shape="rect" coords="1, 4, 664, 563" title="TESTE" onclick="buscar('local17')"/>-->
-                <area shape="circle" coords="583, 153, 38" title="Programa de Necessidades"  onclick="buscar('local1')"/>
-                <area shape="circle" coords="583, 324, 38" title="Referencial Arquitetônico"  onclick="buscar('local2')"/>
-                <area shape="circle" coords="583, 386, 38" title="Análise Programática"  onclick="buscar('local3')"/>
-                <area shape="circle" coords="583, 449, 38" title="Pesquisa Referencial"  onclick="buscar('local4')"/>
+                <area shape="circle" coords="79, 159, 38" title="Programa de Necessidades"  onclick="buscar('local1')"/>
+                <area shape="circle" coords="79, 336, 38" title="Referencial Arquitetônico"  onclick="buscar('local2')"/>
+                <area shape="circle" coords="79, 402, 38" title="Análise Programática"  onclick="buscar('local3')"/>
+                <area shape="circle" coords="79, 467, 38" title="Pesquisa Referencial"  onclick="buscar('local4')"/>
                 <area shape="circle" coords="316, 160, 38" title="Localização"  onclick="buscar('local5')"/>
                 <area shape="circle" coords="282, 214, 38" title="Análise de Entorno"  onclick="buscar('local6')"/>
                 <area shape="circle" coords="347, 214, 38" title="Análise do Terreno"  onclick="buscar('local7')"/>
@@ -38,18 +36,15 @@
                 <area shape="circle" coords="316, 579, 38" title="Partido Arquitetônico"  onclick="buscar('local12')"/>
                 <area shape="circle" coords="316, 641, 38" title="Estudo da Volumetria"  onclick="buscar('local13')"/>
                 <area shape="circle" coords="316, 707, 38" title="Geometria"  onclick="buscar('local14')"/>
-                <area shape="circle" coords="75, 390, 38" title="Zoneamento"  onclick="buscar('local15')"/>
-                <area shape="circle" coords="75, 455, 38" title="Pré-Dimensionamento"  onclick="buscar('local16')"/>
-                <area shape="circle" coords="75, 517, 38" title="Organo-Fluxograma"  onclick="buscar('local17')"/>
-                <area shape="circle" coords="75, 578, 38" title="Materiais Construtivos"  onclick="buscar('local18')"/>
-                <area shape="circle" coords="75, 221, 38" title="Desenvolvimento Desenho Técnico"  onclick="buscar('local18')"/>
-                
-                
+                <area shape="circle" coords="515, 401, 38" title="Zoneamento"  onclick="buscar('local15')"/>
+                <area shape="circle" coords="515, 465, 38" title="Pré-Dimensionamento"  onclick="buscar('local16')"/>
+                <area shape="circle" coords="515, 534, 38" title="Organo-Fluxograma"  onclick="buscar('local17')"/>
+                <area shape="circle" coords="515, 599, 38" title="Materiais Construtivos"  onclick="buscar('local18')"/>
+                <area shape="circle" coords="515, 221, 38" title="Desenvolvimento Desenho Técnico"  onclick="buscar('local19')"/>                
             </map>
         </div>
         <div id="informacao">
-            <h3>Descrição</h3>
-            <h4 id="informacao-titulo">---</h4>
+            <h1 id="informacao-titulo">---</h1>
             <p id="informacao-descricao">
                 ----
             </p>
@@ -60,11 +55,13 @@
     <script src="assets/js/jquery.min.js"></script>
     <script>
         function buscar(valor) {  
-            $.get('assets/dados.json', (dados) => { //Se tiver rodando no servidor recupera os dados assim
+            $.get('assets/dados.json', (dados) => {
                 $('#informacao-titulo').html(dados[valor].titulo)
-                $('#informacao-descricao').css('color', dados[valor].cor1)
+                $('#informacao-descricao').css('color', dados[valor].cor_letra)
                 $('#informacao-descricao').html(dados[valor].descricao)
-                $('#informacao-descricao').css('background-color', dados[valor].cor2)
+                $('#informacao-descricao').css('background-color', dados[valor].cor_fundo)
+                //$('#informacao').css('background-color', dados[valor].cor_fundo)
+                //$('#informacao').css('color', dados[valor].cor_letra)
             })
         }
     </script>
