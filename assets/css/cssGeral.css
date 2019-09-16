@@ -36,10 +36,11 @@
     height: 400px;
     padding: 5px;
     overflow: auto;
-    font-size: 17px
+    font-size: 19px
 }
 #informacao-titulo{
     text-align: center;
+    font-size: 30px;
 }
 #panel-dados{
     width: 100%;
