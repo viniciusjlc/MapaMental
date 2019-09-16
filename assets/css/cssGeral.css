@@ -1,14 +1,23 @@
 .container{
     width: 100% !important;
     zoom: 1.0 !important;
+    position: relative !important;
+    top: 22px !important;
+}
+#texto-cabecalho{
+    font-size: 30px;
+    margin: 8px !important;
+    float: left;
+    width: 150px;
+    width: 28%;
 }
 #cabecalho{
     position: absolute;
     top: 0%;
-    background-color: #470101;
+    background-color: #010648;
     width: 100%;
     right: 0%;
-    height: 70px;
+    height: 50px;
     font-size: 20px;
     color: whitesmoke;
 }        
@@ -17,6 +26,7 @@
     float: left;
     margin: 10px 20px;
     position: relative;
+    top: 50px;
     left: 50px;
 }
 #informacao {
@@ -34,7 +44,6 @@
 #informacao-descricao {
     border: 1px solid black;
     height: 400px;
-    padding: 5px;
     overflow: auto;
     font-size: 19px
 }
