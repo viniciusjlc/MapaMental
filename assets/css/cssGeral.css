@@ -61,3 +61,7 @@
 #target{
     height: 700px;
 }
+#menu-superior{
+    float: right;
+    margin: 10px !important;
+}
