@@ -63,9 +63,20 @@
 }
 #menu-superior{
     float: right;
-    margin: 10px !important;
 }
 .titulo-secundario{
     text-align: center;
-    margin: 0px 12px;
+    margin: 6px 12px;
+}
+.textos{
+    margin: 0px 12px; 
+    text-align: justify;
+}
+.menu-superior-botao{
+    background-color: #010648;
+    width: 100%;
+    right: 0%;
+    height: 50px;
+    font-size: 20px;
+    color: white;
 }
