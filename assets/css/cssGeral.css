@@ -1,9 +1,22 @@
 .container{
     width: 100% !important;
-    zoom: 1.0 !important;
     position: relative !important;
     top: 22px !important;
+    zoom: 1.0 !important;
 }
+
+/*@media only screen and (max-width: 1350px) {
+    .container{ 
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .container{ 
+        zoom: 1.5 !important;
+    }
+}*/
+
+
 #texto-cabecalho{
     font-size: 30px;
     margin: 8px !important;
@@ -62,6 +75,7 @@
     height: 700px;
 }
 #menu-superior{
+    width: 40%;
     float: right;
 }
 .titulo-secundario{
@@ -74,9 +88,10 @@
 }
 .menu-superior-botao{
     background-color: #010648;
-    width: 100%;
+    width: 40%;
     right: 0%;
     height: 50px;
     font-size: 20px;
     color: white;
+    width: 32%;
 }
