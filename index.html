@@ -18,18 +18,18 @@
     </header>
     <div class="container">
         <br clear="both"/>
-        <!-- PODE REMOVER DAQUI PARA BAIXO QUANDO NÂO PRECISAR SABER A COORDENADA 
+        <!-- LOCAL ONDE É POSSIVEL VER AS COORDENADAS
             <div>
                 <label>X1 <input type="text" size="4" id="x1" name="x1" /></label>
                 <label>Y1 <input type="text" size="4" id="y1" name="y1" /></label>
                 <label>X2 <input type="text" size="4" id="x2" name="x2" /></label>
                 <label>Y2 <input type="text" size="4" id="y2" name="y2" /></label>
             </div>
-        -->
+             -->
         <div id="imagem">
+            <!-- MAPA -->
             <img src="assets/img/fluxograma.jpg" usemap="#fluxograma" id="targetA"/>
             <map name="fluxograma">
-                <!--<area shape="rect" coords="1, 4, 664, 563" title="TESTE" onclick="buscar('local17')"/>-->
                 <area shape="circle" coords="79, 159, 38" title="Programa de Necessidades"  onclick="buscar('local1')"/>
                 <area shape="circle" coords="79, 336, 38" title="Referencial Arquitetônico"  onclick="buscar('local2')"/>
                 <area shape="circle" coords="79, 402, 38" title="Análise Programática"  onclick="buscar('local3')"/>
@@ -99,8 +99,8 @@
             
         });
         
-        // Simple event handler, called from onChange and onSelect
-        // event handlers, as per the Jcrop invocation above
+        // ESSE MÉTODO RECEBE UM VALOR REFERENTE 
+        // A UM PONTO DO MAPA E CAPTURA O VALOR X E Y DELE
         function showCoords(c) {
             $('#x1').val(c.x);
             $('#y1').val(c.y);

@@ -4,7 +4,6 @@
     top: 22px !important;
     zoom: 1.0 !important;
 }
-
 /*@media only screen and (max-width: 1350px) {
     .container{ 
     }
@@ -15,8 +14,6 @@
         zoom: 1.5 !important;
     }
 }*/
-
-
 #texto-cabecalho{
     font-size: 30px;
     margin: 8px !important;
