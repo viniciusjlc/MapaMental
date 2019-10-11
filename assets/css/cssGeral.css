@@ -1,27 +1,27 @@
-.container{
+.container {
     width: 100% !important;
     position: relative !important;
     top: 22px !important;
     zoom: 1.0 !important;
 }
-/*@media only screen and (max-width: 1350px) {
-    .container{ 
-    }
-}
 
-@media only screen and (min-width: 1350px) {
-    .container{ 
-        zoom: 1.5 !important;
-    }
-}*/
-#texto-cabecalho{
-    font-size: 30px;
+#texto-cabecalho {
+    font-size: 180%;
     margin: 8px !important;
     float: left;
-    width: 150px;
-    width: 28%;
+    font-family: 'Dyuthi';
+    font-weight: lighter;
+    padding-top: 0.2%;
 }
-#cabecalho{
+
+.logo {
+    width: 2.5%;
+    float: left;
+    margin-left: 1%;
+    margin-top: 0.3%;
+}
+
+#cabecalho {
     position: absolute;
     top: 0%;
     background-color: #010648;
@@ -30,7 +30,8 @@
     height: 50px;
     font-size: 20px;
     color: whitesmoke;
-}        
+}  
+
 #imagem {
     height: 700px;
     float: left;
@@ -39,6 +40,7 @@
     top: 50px;
     left: 50px;
 }
+
 #informacao {
     width: 450px;
     height: 550px;
@@ -51,39 +53,47 @@
     right: 50px;
     
 }
+
 #informacao-descricao {
     border: 1px solid black;
     height: 400px;
     overflow: auto;
     font-size: 19px
 }
-#informacao-titulo{
+
+#informacao-titulo {
     text-align: center;
     font-size: 30px;
 }
-#panel-dados{
+
+#panel-dados {
     width: 100%;
 }
-#targetA{
+
+#targetA {
     height: 700px;
 }
 
-#target{
+#target {
     height: 700px;
 }
-#menu-superior{
+
+#menu-superior {
     width: 40%;
     float: right;
 }
-.titulo-secundario{
+
+.titulo-secundario {
     text-align: center;
     margin: 6px 12px;
 }
-.textos{
+
+.textos {
     margin: 0px 12px; 
     text-align: justify;
 }
-.menu-superior-botao{
+
+.menu-superior-botao {
     background-color: #010648;
     width: 40%;
     right: 0%;
@@ -91,4 +101,14 @@
     font-size: 20px;
     color: white;
     width: 32%;
+}
+
+
+/* MEDIA QUERIES
+======================================= */
+
+@media only screen and (max-width: 1350px) {
+    .container{
+        zoom: 1.2 !important; 
+    }
 }
