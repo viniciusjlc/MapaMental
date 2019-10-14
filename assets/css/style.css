@@ -1,9 +1,14 @@
+#menu-superior {
+    width: 40%;
+    float: right;
+}
+
 #texto-cabecalho {
-    font-size: 36px;
+    font-size: 38px;
     margin: 8px !important;
     float: left;
     font-weight: lighter;
-    padding-top: 0.2%;
+    padding-top: 0.4%;
     font-family: 'Dyuthi', 'Arial';
 }
 
@@ -13,7 +18,7 @@
     background-color: #010648;
     width: 100%;
     right: 0%;
-    height: 50px;
+    height: 6.5%;
     font-size: 20px;
     color: whitesmoke;
 }  
@@ -21,22 +26,17 @@
 #imagem {
     height: 700px;
     float: left;
-    margin: 10px 20px;
-    position: relative;
-    top: 50px;
-    left: 50px;
+    margin: 3% 5%;
 }
 
 #informacao {
-    width: 450px;
+    width: 30%;
     height: 550px;
     padding: 10px;
     float: right;
     border-style: double;
     border-radius: 10px;
-    margin: 10px 20px;
-    position: relative;
-    right: 50px;
+    margin: 3% 10%;
     
 }
 
@@ -56,30 +56,34 @@
     width: 100%;
 }
 
-#targetA {
+#targetA, #target {
     height: 700px;
 }
 
-#target {
-    height: 700px;
-}
-
-#menu-superior {
-    width: 40%;
+#img-sobre {
+    display: flex;
+    flex-direction: column;
     float: right;
+    margin-top: -2%;
+    margin-right: 10%;
+}
+
+#img-sobre-emanuela {
+    width: 182px; 
+    margin-bottom: 15%; 
+    filter: contrast(120%);
 }
 
 .container {
-    width: 100% !important;
     position: relative !important;
-    top: 22px !important;
+    top: 40px !important;
     font-family: 'Dyuthi', 'Arial';
     font-size: 20px;
-    /* zoom: 1.0 !important; */
+    zoom: 1.2 !important;
 }
 
 .logo {
-    width: 2.5%;
+    width: 3%;
     float: left;
     margin-left: 1%;
     margin-top: 0.3%;
@@ -87,25 +91,31 @@
 
 .titulo-secundario {
     text-align: center;
-    margin-top: 2%;
 }
 
 .textos {
-    margin: 0px 12px; 
+    margin: 3% 1%; 
+    text-align: justify;
+}
+
+.textos p {
+    margin-bottom: 2%;
+}
+
+.sobre {
+    width: 70%;
+    float: left;
+    margin-left: 3%;
     text-align: justify;
 }
 
 .menu-superior-botao {
     background-color: #010648;
-    width: 40%;
+    width: 30%;
     right: 0%;
-    height: 50px;
+    height: 60px;
     font-size: 20px;
     color: white;
-    width: 32%;
-}
-
-button {
     cursor: pointer;
 }
 
@@ -113,12 +123,123 @@ button {
 /* MEDIA QUERIES
 ======================================= */
 
-@media only screen and (max-width: 1366px) {
-    /* .container{
-        zoom: 1.2 !important; 
-    } */
+@media screen and (max-width: 1440px) {
+    #cabecalho {
+        height: 7.5%;
+    }
+
+    #informacao {
+        margin: 7%;
+    }
+
+    .container {
+        zoom: unset !important;
+    }
 
     .logo {
         width: 3.5%;
+        margin-top: 0.5%;
     }
+
+    .menu-superior-botao {
+        height: 58px;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+
+    #cabecalho {
+        height: 7%;
+    }
+
+    #texto-cabecalho {
+        font-size: 40px;
+        padding-top: 0.5%;
+    }
+
+    #informacao {
+        margin: 3%;
+    }
+
+    .menu-superior-botao {
+        height: 54px;
+        width: 31%;
+    }
+
+    .container {
+        zoom: unset !important;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    #texto-cabecalho {
+        font-size: 33px;
+        padding-top: 1%;
+    }
+
+    #imagem {
+        margin: 0;
+    }
+
+    #informacao {
+        margin: 1%;
+    }
+
+    .logo {
+        width: 5%;
+        margin-top: 0.7%;
+    }
+
+    .menu-superior-botao {
+        font-size: 14px;
+    }
+
+    .sobre {
+        width: 63%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    #cabecalho {
+        height: 9%;
+    }
+
+    #texto-cabecalho {
+        font-size: 27px;
+        width: 29%;
+    }
+
+    #menu-superior {
+        width: 52%;
+    }
+
+    #informacao {
+        width: 90%;
+        margin: 2.5%;
+    }
+
+    #imagem {
+        margin: 5%;
+    }
+    
+    .logo {
+        width: 6.5%;
+        margin-top: 1.8%;
+        margin-left: 2%;
+    }
+
+    .menu-superior-botao {
+        height: 69px;
+    }
+
+    .sobre {
+        width: 57%;
+    }
+
 }
