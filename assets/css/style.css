@@ -9,7 +9,7 @@
     float: left;
     font-weight: lighter;
     padding-top: 0.4%;
-    font-family: 'Dyuthi', 'Arial';
+    font-family: 'Dyuthi', 'Verdana', 'sans-serif';
 }
 
 #cabecalho {
@@ -77,7 +77,7 @@
 .container {
     position: relative !important;
     top: 40px !important;
-    font-family: 'Dyuthi', 'Arial';
+    font-family: 'Dyuthi', 'Verdana', 'sans-serif';
     font-size: 20px;
     zoom: 1.2 !important;
 }
