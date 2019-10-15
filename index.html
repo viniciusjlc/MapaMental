@@ -5,16 +5,18 @@
     <title>Teste Mapa Mental</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/modal-img.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
     <header id="cabecalho">
-        <img class="logo" src="assets/img/metodo-montone-batista.png" />
+        <img id="logo" class="logo" src="assets/img/metodo-montone-batista.png" />
         <h1 id="texto-cabecalho">Metodologia Montoni Batista</h1>
-        <div id="menu-superior">
-            <button class="menu-superior-botao" onclick="location.href = 'conceito.html';">Conceitos</button>
-            <button class="menu-superior-botao" onclick="location.href = 'tutorial.html';">Tutorial</button>
-            <button class="menu-superior-botao" onclick="location.href = 'sobre.html';">Sobre</button>
+        <div id="menu">
+            <button class="buttons-menu" onclick="location.href = 'index.html';">Mapa Conceitual</button>
+            <button class="buttons-menu" onclick="location.href = 'conceito.html';">Conceitos</button>
+            <button class="buttons-menu" onclick="location.href = 'tutorial.html';">Tutorial</button>
+            <button class="buttons-menu" onclick="location.href = 'sobre.html';">Sobre</button>
         </div>
     </header>
     <div class="container">
@@ -64,9 +66,16 @@
             </p>
         </div>
     </div>
+
+    <div id="img-modal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img">
+        <div id="caption"></div>
+    </div>
     
     <!-- MANTEM -->
     <script src="assets/js/jquery.min.js"></script>
+    
     <script>
         function buscar(valor) {  
             $.get('assets/dados.json', (dados) => {
@@ -79,8 +88,10 @@
             })
         }
     </script>
+
     <!-- REMOVE, DEPOIS QUE JÀ SOUBER AS COORDENADAS -->
     <script src="assets/js/jcrop/jquery.Jcrop.js"></script>   
+    
     <script type="text/javascript">
         
         jQuery(function($){   
@@ -115,5 +126,8 @@
             $('#coords input').val('');
         };
     </script>
+
+    <script type="text/javascript" src="assets/js/modal-img.js"></script>
+      
 </body>
 </html>
