@@ -110,6 +110,7 @@
 }
 
 .buttons-menu {
+    border: none;
     background-color: #010648;
     width: 196px;
     right: 0;
@@ -123,6 +124,10 @@
     filter: brightness(140%);
 }
 
+
+.participantes {
+    font-size: 16px;
+}
 
 /* MEDIA QUERIES
 ======================================= */
@@ -160,30 +165,42 @@
 
 @media screen and (max-width: 1366px) {
 
-    #cabecalho {
+    #cabecalho {    
         height: 8.8%;
     }
 
     #texto-cabecalho {
-        font-size: 38px;
-        padding-top: 0.5%;
+        font-size: 32px;
+        padding-top: 0;
+    }
+
+    #menu {
+        width: 47%;
     }
 
     #informacao {
         margin: 3%;
     }
 
-    #menu {
-        width: 46%;
+    #informacao-titulo {
+        height: 12%;
+    }
+
+    #informacao-descricao {
+        height: 66%;
     }
 
     .buttons-menu {
         height: 54px;
-        width: 151.4px;
+        width: 154.7px;
     }
 
     .container {
         zoom: unset !important;
+    }
+
+    .participantes {
+        font-size: 12px;
     }
 
 }
