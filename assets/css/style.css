@@ -18,7 +18,7 @@
     background-color: #010648;
     width: 100%;
     right: 0%;
-    height: 6.5%;
+    height: 6.1%;
     font-size: 20px;
     color: whitesmoke;
 }  
@@ -132,6 +132,14 @@
 /* MEDIA QUERIES
 ======================================= */
 
+@media (min-width: 1441px) and (max-width: 2560px) {
+    
+    .container {
+        zoom: 1.5 !important;
+    }
+
+}
+
 @media screen and (max-width: 1440px) {
     #cabecalho {
         height: 7.5%;
@@ -182,10 +190,6 @@
         margin: 3%;
     }
 
-    #informacao-titulo {
-        height: 12%;
-    }
-
     #informacao-descricao {
         height: 66%;
     }
@@ -201,6 +205,14 @@
 
     .participantes {
         font-size: 12px;
+    }
+
+}
+
+@media (min-width:1025px) and (max-width: 1366px) {
+
+    #informacao-titulo {
+        height: 12%;
     }
 
 }
