@@ -121,7 +121,7 @@
 }
 
 .buttons-menu:hover {
-    filter: brightness(140%);
+    background-color: #001d6b;
 }
 
 
