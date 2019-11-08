@@ -29,19 +29,18 @@
 }
 
 #informacao {
-    width: 30%;
-    height: 550px;
-    padding: 10px;
+    width: 33%;
+    height: 620px;
+    padding: 1.2%;
     float: right;
     border-style: double;
     border-radius: 10px;
-    margin: 3% 10%;
-    
+    margin: 2% 6%;
 }
 
 #informacao-descricao {
     border: 1px solid black;
-    height: 400px;
+    height: 73%;
     overflow: auto;
     font-size: 19px
 }
@@ -62,6 +61,11 @@
 #img-sobre-emanuela {
     width: 182px;
     filter: contrast(120%);
+}
+
+.container {
+    zoom: unset !important;
+    
 }
 
 .img-sobre {
@@ -113,18 +117,9 @@
 }
 
 
-
 /* MEDIA QUERIES
 ======================================= */
 
-
-/* @media (min-width: 1441px) and (max-width: 2560px) {
-    
-    .container {
-        zoom: 1.5 !important;
-    }
-
-} */
 
 @media screen and (max-width: 1440px) {
     #cabecalho {
@@ -137,10 +132,6 @@
 
     #menu {
         width: 53%;
-    }
-
-    .container {
-        zoom: unset !important;
     }
 
     .logo {
@@ -182,10 +173,6 @@
     .buttons-menu {
         height: 54px;
         width: 154.7px;
-    }
-
-    .container {
-        zoom: unset !important;
     }
 
     .participantes {
