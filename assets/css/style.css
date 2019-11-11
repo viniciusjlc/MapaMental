@@ -1,5 +1,5 @@
 #menu {
-    width: 42%;
+    width: 43%;
     float: right;
 }
 
@@ -18,14 +18,13 @@
     background-color: #010648;
     width: 100%;
     right: 0%;
-    height: 6.1%;
+    height: 6.5%;
     font-size: 20px;
 }  
 
 #imagem {
     height: 700px;
     float: left;
-    margin: 3% 5%;
 }
 
 #informacao {
@@ -64,8 +63,7 @@
 }
 
 .container {
-    zoom: unset !important;
-    
+    zoom: 1.1 !important;
 }
 
 .img-sobre {
@@ -99,7 +97,7 @@
 .buttons-menu {
     border: none;
     background-color: #010648;
-    width: 196px;
+    width: 200px;
     right: 0;
     height: 60px;
     font-size: 20px;
@@ -122,17 +120,30 @@
 
 
 @media screen and (max-width: 1440px) {
+
     #cabecalho {
         height: 7.5%;
-    }
-
-    #informacao {
-        margin: 7%;
     }
 
     #menu {
         width: 53%;
     }
+
+    #informacao {
+        margin: 0;
+    }
+
+    #informacao-titulo {
+        height: 10%;
+    }
+
+    #informacao-descricao {
+        height: 69%;
+    }
+
+    .container {
+        zoom: 0 !important;
+    }    
 
     .logo {
         max-width: 50px;
@@ -164,10 +175,11 @@
 
     #informacao {
         margin: 3%;
+        height: 585px;
     }
 
     #informacao-descricao {
-        height: 66%;
+        height: 68%;
     }
 
     .buttons-menu {
@@ -199,16 +211,17 @@
         font-size: 30px;
     }
 
-    #imagem {
-        margin: 0;
-    }
-
     #informacao {
         margin: 1%;
     }
 
     #menu {
         width: 50%;
+    }
+
+    .container {
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .logo {
@@ -244,11 +257,20 @@
 
     #informacao {
         width: 90%;
-        margin: 2.5%;
+        margin: 0 2%;
+        padding: 2.5%;
+    }
+
+    #informacao-titulo {
+        height: unset;
+    }
+
+    #informacao-descricao {
+        height: 75%;
     }
 
     #imagem {
-        margin: 5%;
+        margin: 5% 9%;
     }
     
     .logo {
@@ -259,6 +281,10 @@
 
     .buttons-menu {
         height: 61px;
+    }
+
+    .participantes {
+        font-size: 14px;
     }
 
     .sobre {
