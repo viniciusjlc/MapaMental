@@ -1,5 +1,5 @@
 #menu {
-    width: 43%;
+    width: 38.6%;
     float: right;
 }
 
@@ -97,7 +97,7 @@
 .buttons-menu {
     border: none;
     background-color: #010648;
-    width: 200px;
+    width: 180px;
     right: 0;
     height: 60px;
     font-size: 20px;
@@ -126,7 +126,7 @@
     }
 
     #menu {
-        width: 53%;
+        width: 51.1%;
     }
 
     #informacao {
@@ -153,7 +153,6 @@
 
     .buttons-menu {
         height: 58px;
-        width: 185px;
         font-size: 17px;
     }
 
@@ -162,7 +161,7 @@
 @media screen and (max-width: 1366px) {
 
     #cabecalho {    
-        height: 8.8%;
+        height: 7%;
     }
 
     #texto-cabecalho {
@@ -170,7 +169,7 @@
     }
 
     #menu {
-        width: 47%;
+        width: 46.4%;
     }
 
     #informacao {
@@ -201,6 +200,19 @@
 
 }
 
+@media (min-width:1024px) and (max-width:1200px) {
+    
+    #menu {
+        width: 47.6%;
+    }
+
+    .buttons-menu {
+        font-size: 14px;
+        width: 139px;
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
 
     #cabecalho {
@@ -216,7 +228,7 @@
     }
 
     #menu {
-        width: 50%;
+        width: 49.2%;
     }
 
     .container {
@@ -240,19 +252,19 @@
     
 }
 
-@media screen and (max-width: 768px) {
-
-    #cabecalho {
-        height: 8%;
-    }
-
+@media screen and (max-width: 920px) {
+    
     #texto-cabecalho {
-        font-size: 22px;
-        width: 22%;
+        font-size: 26px;
+        margin: 1.2% !important;
     }
 
     #menu {
-        width: 67%;
+        width: 54.7%
+    }
+
+    #imagem {
+        margin: 5% 9%;
     }
 
     #informacao {
@@ -269,8 +281,21 @@
         height: 75%;
     }
 
-    #imagem {
-        margin: 5% 9%;
+}
+
+@media screen and (max-width: 768px) {
+
+    #cabecalho {
+        height: 8%;
+    }
+
+    #texto-cabecalho {
+        font-size: 22px;
+        width: 22%;
+    }
+
+    #menu {
+        width: 65.5%;
     }
     
     .logo {
