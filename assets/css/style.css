@@ -1,5 +1,5 @@
 #menu {
-    width: 38.6%;
+    /* width: 38.6%; */
     float: right;
 }
 
@@ -125,10 +125,6 @@
         height: 7.5%;
     }
 
-    #menu {
-        width: 51.1%;
-    }
-
     #informacao {
         margin: 0;
     }
@@ -168,10 +164,6 @@
         font-size: 32px;
     }
 
-    #menu {
-        width: 46.4%;
-    }
-
     #informacao {
         margin: 3%;
         height: 585px;
@@ -201,10 +193,6 @@
 }
 
 @media (min-width:1024px) and (max-width:1200px) {
-    
-    #menu {
-        width: 47.6%;
-    }
 
     .buttons-menu {
         font-size: 14px;
@@ -225,10 +213,6 @@
 
     #informacao {
         margin: 1%;
-    }
-
-    #menu {
-        width: 49.2%;
     }
 
     .container {
@@ -257,10 +241,6 @@
     #texto-cabecalho {
         font-size: 26px;
         margin: 1.2% !important;
-    }
-
-    #menu {
-        width: 54.7%
     }
 
     #imagem {
@@ -294,10 +274,6 @@
         width: 22%;
     }
 
-    #menu {
-        width: 65.5%;
-    }
-    
     .logo {
         width: 6.5%;
         margin-top: 1.3%;
